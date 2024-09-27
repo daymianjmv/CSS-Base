@@ -10,6 +10,10 @@ CSS Order of operations:
 */
 
 /* Inline vs Block Elements*/
+* {box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
 header > nav{background-color: darkkhaki; padding: 1em; border-radius: 1rem;}
 nav > a {background-color: green;
     display: inline-block;
@@ -37,5 +41,38 @@ h1 {display: inline-block; background-color: chocolate;}
 
 
 
+/*ID Selectors*/
 
+.flex{
+    display: flex;
+}
+
+#main-content{
+    background-color:cornsilk;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 1em;
+}
+/*Class Selectors*/
+.content{ 
+ border: solid 1px black;
+ padding: 1em;
+ width: 75%;
+}
+
+.right-content {
+width: 25%;
+padding: 1em;
+border: dotted 1px black
+}
+
+.bottom-content{
+    background-color: darkkhaki;
+    padding: 1em;
+    color: beige;
+}
+.bottom-content > section {
+    width: 30%;
+    margin: 1em;
+}
 /* Selector Specificity */
